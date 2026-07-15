@@ -9,7 +9,10 @@ import random
 ROWS = 4
 COLS = 4
 TIME_LIMIT = 60
-
+def rungame():
+    root = tk.Tk()
+    game = NumberMatchGame(root)
+    root.mainloop()
 class NumberMatchGame:
 
     def __init__(self, root):
